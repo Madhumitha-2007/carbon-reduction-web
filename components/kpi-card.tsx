@@ -59,7 +59,7 @@ export function KPICard({
                   {isPositive && <TrendingUp className="h-4 w-4" />}
                   {isNegative && <TrendingDown className="h-4 w-4" />}
                   {isNeutral && <Minus className="h-4 w-4" />}
-                  {Math.abs(change).toFixed(1)}%
+                  {change?.toFixed(1)}%
                 </span>
                 <span className="text-xs text-muted-foreground">{changeLabel}</span>
               </div>
